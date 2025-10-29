@@ -1,0 +1,7 @@
+package exception;
+
+public class ProductNotFoundException extends RuntimeException {
+    public ProductNotFoundException(String productId) {
+        super("Produkt mit der ID " + productId + " konnte nicht gefunden werden!");
+    }
+}

@@ -1,3 +1,8 @@
+package repository;
+
+import enums.OrderStatus;
+import model.Order;
+
 import java.util.List;
 
 public interface OrderRepo {
@@ -9,4 +14,6 @@ public interface OrderRepo {
     Order addOrder(Order newOrder);
 
     void removeOrder(String id);
+
+    List<Order> getOrdersByStatus(OrderStatus status);
 }

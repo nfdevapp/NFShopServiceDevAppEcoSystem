@@ -1,3 +1,8 @@
+package repository;
+
+import enums.OrderStatus;
+import model.Order;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -25,5 +30,10 @@ public class OrderMapRepo implements OrderRepo{
     @Override
     public void removeOrder(String id) {
         orders.remove(id);
+    }
+
+    @Override
+    public List<Order> getOrdersByStatus(OrderStatus status) {
+        return List.of();
     }
 }

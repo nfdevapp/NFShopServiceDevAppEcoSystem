@@ -1,4 +1,7 @@
+import model.Order;
+import model.Product;
 import org.junit.jupiter.api.Test;
+import service.ShopService;
 
 import java.util.List;
 
